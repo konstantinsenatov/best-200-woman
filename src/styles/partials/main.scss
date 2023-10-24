@@ -1,0 +1,42 @@
+body {
+	background-color: #09151F;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	.main {
+		flex: 1 1 auto;
+	}
+}
+.container{
+	width: 1920px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.desk {
+	@media (max-width: 800px){
+		display: none;
+	}
+}
+.mob {
+	display: none;
+	@media (max-width: 800px){
+		display: block;
+	}
+}
+.white-color {
+	color: #FFF;
+}
+.yellow-color {
+	color: #F2B604;
+}
+.red-color {
+	color: #F70042;
+}
+.blue-color {
+	color: #1A56A5;
+}
+.visible_item{
+	display:none;
+}

@@ -1,0 +1,231 @@
+.header {
+	&__container {
+		position: relative;
+		padding: 65px 100px 0;
+		@media (max-width: 1920px){
+			padding: 3.39vw 5.21vw 0;
+		}
+		@media (max-width: 800px){
+			padding: 8.13vw 3.13vw 0 5.63vw;
+		}
+	}
+		&__icon-circle {
+			position: absolute;
+			top: 225px;
+			right: 185px;
+			width: 185px;
+			height: 185px;
+			@media (max-width: 1920px){
+				top: 11.72vw;
+				right: 9.64vw;
+				width: 9.64vw;
+				height: 9.64vw;
+			}
+			@media (max-width: 800px){
+				width: 20vw;
+				height: 20vw;
+			}
+		}
+		&__row {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+		&__logos {
+			flex: 0 0 auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+			&__logo {
+				margin-top: -20px;
+				@media (max-width: 1920px){
+					margin-top: -1.04vw;
+				}
+				img {
+					width: 330px;
+					height: 140px;
+					@media (max-width: 1920px){
+						width: 17.19vw;
+						height: 7.29vw;
+					}
+					@media (max-width: 800px){
+						width: 41.25vw;
+						height: 17.50vw;
+					}
+				}
+				span {
+					display: block;
+					max-width: 245px;
+					margin-left: auto;
+					margin-right: -25px;
+					color: #FFF;
+					font-family: Raleway;
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 900;
+					line-height: 118.4%;
+					@media (max-width: 1920px){
+						max-width: 12.76vw;
+						margin-right: -1.30vw;
+						font-size: 0.94vw;
+					}
+					@media (max-width: 800px){
+						max-width: 30.63vw;
+						margin-right: -3vw;
+						font-size: 2.25vw;
+					}
+				}
+			}
+			&__logo-mydecor {
+				margin-left: 60px;
+				@media (max-width: 1920px){
+					margin-left: 3.13vw;
+				}
+				@media (max-width: 800px){
+					margin-left: 6.88vw;
+				}
+				img {
+					width: 225px;
+					height: 60px;
+					@media (max-width: 1920px){
+						width: 11.72vw;
+						height: 3.13vw;
+					}
+					@media (max-width: 800px){
+						width: 28.13vw;
+						height: 7.50vw;
+					}
+				}
+			}
+		&__btns {
+			margin-left: 60px;
+			flex: 1 1 auto;
+			display: flex;
+			@media (max-width: 1920px){
+				margin-left: 3.13vw;
+			}
+			@media (max-width: 800px){
+				margin-left: 0;
+			}
+		}
+			&__btn {
+				flex: 0 1 33.333%;
+				margin-left: 20px;
+				padding: 15px 0;
+				color: #FFF;
+				text-align: center;
+				font-family: Miratrix;
+				font-size: 36px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				text-transform: uppercase;
+				background: #000;
+				border-radius: 15px;
+				@media (max-width: 1920px){
+					margin-left: 1.04vw;
+					padding: 0.78vw 0;
+					font-size: 1.88vw;
+					border-radius: 0.78vw;
+				}
+				@media (max-width: 800px){
+					margin-left: 0;
+					padding: 1.88vw 0;
+					font-size: 4.50vw;
+					border-radius: 1.88vw;
+				}
+				&--yellow {
+					border: 1px solid #F2B604;
+					@media (max-width: 1920px){
+						border: 0.05vw solid #F2B604;
+					}
+				}
+				&--red {
+					border: 1px solid #F70042;
+					@media (max-width: 1920px){
+						border: 0.05vw solid #F70042;
+					}
+				}
+				&--blue {
+					border: 1px solid #1A56A5;
+					@media (max-width: 1920px){
+						border: 0.05vw solid #1A56A5;
+					}
+				}
+			}
+		&__burger {
+			display: none;
+			@media (max-width: 800px){
+				display: block;
+				width: 7.88vw;
+				height: 6.50vw;
+				svg {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	&__popup {
+		display: none;
+		@media (max-width: 800px){
+			display: block;
+		}
+		position: fixed;
+		z-index: 999;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		pointer-events: none;
+		visibility: hidden;
+		width: 100%;
+		height: 100vh;
+		max-height: 100vh;
+		overflow: auto;
+		background-color: #09151F;
+		transition: all 0.3s ease 0s;
+		&.js-active {
+			opacity: 1;
+			pointer-events: auto;
+			visibility: visible;
+		}
+		&-close {
+			width: 6.63vw;
+			height: 6.63vw;
+			position: absolute;
+			top: 3.75vw;
+			right: 5vw;
+			svg {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		&-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 5vw 0 8.75vw;
+			.header__logos {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				.header__logo-mydecor {
+					margin-top: 6.25vw;
+					margin-left: 0;
+				}
+			}
+			.header__btns {
+				margin-top: 6.25vw;
+				flex-direction: column;
+				width: 45.63vw;
+				.header__btn {
+					margin-top: 10vw;
+				}
+			}
+			.header__icon-circle {
+				position: static;
+				margin-top: 22.50vw;
+			}
+		}
+	} 
+}

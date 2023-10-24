@@ -1,0 +1,27 @@
+/* base */
+@import "base/var";
+@import "base/reset";
+@import "base/fonts";
+
+/* mixin */
+@import "base/mixin";
+
+/*libs*/
+@import "libs/fancybox";
+
+
+/* components */
+@import "partials/header";
+@import "partials/footer";
+
+/* main */
+@import "partials/main";
+
+/*blocks*/
+@import "blocks/hero";
+@import "blocks/nominations";
+@import "blocks/feedback";
+@import "blocks/gallary";
+
+
+

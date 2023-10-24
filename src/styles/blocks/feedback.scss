@@ -1,0 +1,213 @@
+.feedback {
+	margin-top: 120px;
+	@media (max-width: 1920px){
+		margin-top: 6.25vw;
+	}
+	@media (max-width: 800px){
+		margin-top: 15vw;
+	}
+	&__square-top-right{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 225px;
+		height: 315px;
+		z-index: 2;
+		transform: translate(0, -40%);
+		@media (max-width: 1920px){
+			width: 11.72vw;
+			height: 16.41vw;
+		}
+		@media (max-width: 800px){
+			width: 12.50vw;
+			height: 20vw;
+		}
+	}
+	&__square-bottom-left{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 225px;
+		height: 388px;
+		z-index: -1;
+		transform: translate(0, 50%);
+		@media (max-width: 1920px){
+			width: 11.72vw;
+			height: 20.21vw;
+		}
+		@media (max-width: 800px){
+			width: 28.13vw;
+			height: 36vw;
+		}
+	}
+	&__title {
+		position: relative;
+		color: #F2B604;
+		text-align: center;
+		font-family: Miratrix;
+		font-size: 128px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		text-transform: uppercase;
+		@media (max-width: 1920px){
+			font-size: 6.67vw;
+		}
+		@media (max-width: 800px){
+			font-size: 8vw;
+			margin-left: 15vw;
+		}
+		span {
+			position: relative;
+			.feedback__square-top-left{
+				position: absolute;
+				top: 50%;
+				left: -90px;
+				width: 105px;
+				height: 135px;
+				transform: translate(-100%, -50%);
+				@media (max-width: 1920px){
+					left: -4.69vw;
+					width: 5.47vw;
+					height: 7.03vw;
+				}
+				@media (max-width: 800px){
+					left: -6.88vw;
+					width: 10.50vw;
+					height: 10.50vw;
+				}
+			}
+		}
+	}
+	&__container {
+		margin-top: 80px;
+		padding: 110px 0 60px;
+		background: #F2B604;
+		position: relative;
+		@media (max-width: 1920px){
+			margin-top: 4.17vw;
+			padding: 5.73vw 0 3.13vw;
+		}
+		@media (max-width: 800px){
+			margin-top: 23.75vw;
+			padding: 16.25vw 7.50vw 10vw;
+		}
+		&::before,&::after{
+			content:'';
+			position: absolute;
+			z-index: -2;
+			left: 0;
+			width: 100%;
+			height: 20px;
+			background-color: #F70042;
+			@media (max-width: 1920px){
+				height: 1.04vw;
+			}
+			@media (max-width: 800px){
+				height: 3.75vw;
+			}
+		}
+		&::before{
+			top: 0;
+			transform: translate(0, -100%);
+		}
+		&::after{
+			bottom: 0;
+			transform: translate(0, 100%);
+		}
+	}
+	&__form {
+		width: 1400px;
+		max-width: 100%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		@media (max-width: 1920px){
+			width: 72.92vw;
+		}
+		@media (max-width: 800px){
+			width: 100%;
+		}
+	}
+	&__fields {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -20px;
+		@media (max-width: 1920px){
+			margin: -1.04vw;
+		}
+		@media (max-width: 800px){
+			margin: -2.50vw;
+		}
+	}
+	&__field {
+		flex: 0 1 50%;
+		padding: 20px;
+		@media (max-width: 1920px){
+			padding: 1.04vw;
+		}
+		@media (max-width: 800px){
+			padding: 2.50vw;
+			flex: 1 1 100%;
+		}
+	}
+	&__input {
+		width: 100%;
+		color: #FFF;
+		font-family: Raleway;
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		text-transform: uppercase;
+		border-radius: 15px;
+		border: 1px solid #FFF;
+		background: #D8A201;
+		padding: 30px;
+		@media (max-width: 1920px){
+			font-size: 1.88vw;
+			border-radius: 0.78vw;
+			border: 0.05vw solid #FFF;
+			padding: 1.56vw;
+		}
+		@media (max-width: 800px){
+			font-size: 4.50vw;
+			border-radius: 1.88vw;
+			border: 0.13vw solid #FFF;
+			padding: 3.75vw;
+		}
+		&::placeholder {
+			color: #FFF;
+		}
+	}
+	&__btn {
+		border-radius: 15px;
+		background: #F70042;
+		color: #FFF;
+		text-align: center;
+		font-family: Miratrix;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		text-transform: uppercase;
+		padding: 15px 0;
+		min-width: 328px;
+		margin: 74px 0 0;
+		@media (max-width: 1920px){
+			border-radius: 0.78vw;
+			font-size: 1.67vw;
+			padding: 0.78vw 0;
+			min-width: 17.08vw;
+			margin: 3.85vw 0 0;
+		}
+		@media (max-width: 800px){
+			border-radius: 1.88vw;
+			font-size: 4vw;
+			padding: 1.88vw 0;
+			min-width: 41vw;
+			margin: 9.25vw 0 0;
+		}
+	}
+}

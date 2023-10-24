@@ -1,0 +1,32 @@
+doctype html
+
+block vars
+include ../components/_mixins
+
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(name="description" content="")
+		meta(name="keywords" content="")
+		link(href="css/main.min.css" rel="stylesheet")
+		link(href='https://fonts.googleapis.com/css2?family=Miriam+Libre&family=Raleway:wght@300;400;500;600;700;900&display=swap' rel='stylesheet')
+		title= `${page.title}`
+
+	body
+		.wrapper
+			block header
+				include ../partials/_header
+
+			main.main
+				block main
+
+			block footer
+				include ../partials/_footer
+
+		block modals
+
+
+		script(src="js/main.min.js")
+
+		block scripts

@@ -1,0 +1,89 @@
+.hero {
+	position: relative;
+	&__image {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		&-build {
+			bottom: 0;
+			height: calc(100% + 250px);;
+			z-index: -1;
+			@media (max-width: 1920px){
+				height: calc(100% + 13.02vw);;
+			}
+			@media (max-width: 1920px){
+				height: calc(100% + 36.02vw);;
+			}
+		}
+		&-lines {
+			bottom: 230px;
+			height: 420px;
+			@media (max-width: 1920px){
+				bottom: 11.98vw;
+				height: 21.88vw;
+			}
+			@media (max-width: 800px){
+				bottom: 28.75vw;
+				height: 52.50vw;
+			}
+		}
+	}
+	&__container {
+		padding: 62px 250px 450px;
+		@media (max-width: 1920px){
+			padding: 3.23vw 13.02vw 23.44vw;
+		}
+		@media (max-width: 800px){
+			padding: 7.50vw 9vw 46.25vw;
+		}
+	}
+	&__title {
+		font-family: Raleway;
+		font-size: 128px;
+		font-style: normal;
+		font-weight: 900;
+		line-height: 100%;
+		@media (max-width: 1920px){
+			font-size: 6.67vw;
+		}
+		@media (max-width: 800px){
+			font-size: 16vw;
+			br {
+				display: none;
+			}
+		}
+		.white-color {
+			font-size: 157px;
+			@media (max-width: 1920px){
+				font-size: 8.18vw;
+			}
+			@media (max-width: 800px){
+				font-size: 19.63vw;
+			}
+		}
+		.blue-color {
+			font-size: 157px;
+			@media (max-width: 1920px){
+				font-size: 8.18vw;
+			}
+			@media (max-width: 800px){
+				font-size: 19.63vw;
+			}
+		}
+	}
+	&__text {
+		color: #FFF;
+		font-family: Raleway;
+		font-size: 28px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 120%; 
+		text-transform: uppercase;
+		@media (max-width: 1920px){
+			font-size: 1.46vw;
+		}
+		@media (max-width: 800px){
+			display: none;
+		}
+	}
+}

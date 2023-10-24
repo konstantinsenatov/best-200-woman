@@ -1,0 +1,13 @@
+extends ../layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'Главная'
+		};
+
+block main
+	include ../blocks/hero
+	include ../blocks/nominations
+	include ../blocks/feedback
+	include ../blocks/gallary
